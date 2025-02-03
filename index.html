@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmit Portfolio| Software Engineer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="assets/Logo.png" alt="Profile Photo" class="profile-photo animate__animated animate__fadeIn">
+            <h1 class="animate__animated animate__fadeInUp section-title, name" >ASHMIT KUMAR MISHRA</h1>
+            <h2 class="animate__animated animate__fadeInUp animate__delay-1s">CS Undergrad with EE Minor & Concentration in AI</h2>
+            <p class="animate__animated animate__fadeInUp animate__delay-2s">Building experiences that drive INNOVATION</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="section">
+    <div class="about-container hidden">
+        <div class="about-image" data-aos="zoom-in">
+            <img src="assets/" alt="Ashmit Kumar Mishra">
+        </div>
+        <div class="about-content" data-aos="fade-left">
+            <h2>About Me</h2>
+            <div class="education">
+                <h3>📚 Current Education</h3>
+                <p>B.Sc. Computer Science<br>
+                Mississippi State University<br>
+                Expected Graduation: 2025</p>
+            </div>
+            <p class="bio">A passionate software engineer with expertise in full-stack development and machine learning. 
+                Currently researching AI applications in medical imaging at MSU's Physics Department. 
+                Love creating solutions that blend technical excellence with user-centric design.</p>
+            
+            <div class="skills">
+                <div class="skill-card" data-aos="flip-up">
+                    <h4>Frontend</h4>
+                    <p>React • ChakraUI • JavaScript • HTML5/CSS3</p>
+                </div>
+                <div class="skill-card" data-aos="flip-up" data-aos-delay="200">
+                    <h4>Backend</h4>
+                    <p>Node.js • Python • Flask • PostgreSQL</p>
+                </div>
+                <div class="skill-card" data-aos="flip-up" data-aos-delay="400">
+                    <h4>ML/AI</h4>
+                    <p>TensorFlow • Keras • OpenCV • PyTorch</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="project-card hidden">
+            <img class="project_img" src="./assets/Spotify.png" alt="">
+            <h3 >AI Content Moderator</h3>
+            <p>Machine learning system for automated content analysis</p>
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Flask</span>
+            </div>
+        </div>
+
+        <div class="project-card hidden">
+            <h3>E-commerce Platform</h3>
+            <p>Full-featured shopping platform with real-time analytics</p>
+            <div class="tech-stack">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+            </div>
+        </div>
+    </section>
+    <h2 class="section-title">Work Experience</h2>
+
+    <section id="work" class="section">
+        <div class="experience-card hidden" data-aos="fade-up">
+            <div class="card-header">
+                <div class="title-group">
+                    <h3>Undergraduate Research Assistant </h3>
+                    <span class="company">Department of Physics & Astronomy | Mississippi State University</span>
+                </div>
+                <span class="date">Nov 2024 - Present</span>
+            </div>
+            <ul class="card-list" >
+                
+                <li>Building a machine learning model to classify microscopic images of various types of cancer, including ovarian cancer,
+                    pancreatic cancer, Alzheimer's, breast cancer, and prostate cancer.</li>
+                <li>Utilizing Python, TensorFlow, and Keras, along with MATLAB for image processing and data augmentation techniques
+                    such as normalization, resizing, and enhancement</li>
+                <li>Implementing ResNet-50 as the base architecture in Python, fine-tuning it for improved accuracy, and conducting
+                    hyperparameter optimization to enhance model performance and classification accuracy.
+                    </li>
+
+            </ul>
+            <div class="tech-stack">
+                <span>MATLAB</span>
+                <span>GIT</span>
+                <span>ML & DL Frameworks</span>
+                <span>Computer Vision</span>
+                <span>SQL</span>
+                <span>ResNet 50</span>
+            </div>
+        </div>
+        
+        <div class="experience-card hidden" data-aos="fade-up">
+            <div class="card-header">
+                <div class="title-group">
+                    <h3>Undergraduate Research Assistant</h3>
+                    <span class="company">Electrical & Computer Engineering Department | Mississippi State University</span>
+                </div>
+                <span class="date">Dec 2023 - Sept 2024</span>
+            </div>
+            <ul class="card-list">
+                <li>Developed and tested a secure & end-to-end data transmission system by configuring 9 USRPs synchronized with Octoclock
+                    and integrating srsRAN and Open5GS, making the data transmission resilient to DoS attacks & increasing the message
+                    confidentiality by 100%.</li>
+                <li>Worked on developing a convolutional neural network (CNN) model for multi-image classification, implemented data
+                    preprocessing & model building, and achieved accuracy up to 95% in recognizing given images.</li>
+                <li>Leverage Python/C++ and open-source software libraries to develop software tested with networked software-defined
+                    radio hardware. Work on OSS such as srsRAN using ZeroMQ & gNodeB for 5G network simulations.</li>
+            </ul>
+            <div class="tech-stack">
+                <span>Docker</span>
+                <span>Open Source Cellular Networks</span>
+                <span>Bash</span>
+                <span>low-level radio hardware programming</span>
+                <span>TCP/IP & RAN</span>
+            </div>
+        </div>
+        <div class="experience-card hidden" data-aos="fade-up">
+            <div class="card-header">
+                <div class="title-group">
+                    <h3>Software Engineer Intern</h3>
+                    <span class="company">Minilytics Technologies | Delhi, India</span>
+                </div>
+                <span class="date">June 2023 - Aug 2023</span>
+            </div>
+            <ul class="card-list">
+                <li>Developed an intelligent fees reminder using Python, SQLAlchemy, and Flask to automate reminders and track customer
+                    payments & prior delays which reduced the failure of payments to the company by more than 15%</li>
+                <li>Implemented a notification system using Twilio API for SMS and SMTP for email reminders, and custom schedules, reducing
+                    overdue payments by up to 30%.</li>
+                <li>Developed a robust backend architecture with PostgreSQL for efficient data storage, handling thousands of customer
+                    records and transaction logs.</li>
+            </ul>
+            <div class="tech-stack">
+                <span>Python & SQL</span>
+                <span>Flask & SQLAlchemy</span>
+                <span>PostgreSQL</span>
+                <span>Twilio API & SMTP</span>
+                <span>Data Handling & Visualization</span>
+            </div>
+        </div>
+    </section>
+
+   
+</section>
+
+    
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
