@@ -70,3 +70,23 @@ const aboutObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.about-container').forEach(container => {
     aboutObserver.observe(container);
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.querySelector('.dropdown-container');
+    const trigger = document.querySelector('.contact-trigger');
+    
+    // Mobile toggle
+    trigger.addEventListener('click', (e) => {
+        if(window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdownMenu = document.querySelector('.contact-dropdown');
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if(!dropdown.contains(e.target) && window.innerWidth <= 768) {
+            document.querySelector('.contact-dropdown').style.display = 'none';
+        }
+    });
+});
