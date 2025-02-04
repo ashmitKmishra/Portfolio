@@ -16,9 +16,9 @@
     <nav class="navbar">
         <div class="nav-links">
             <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#work">Work</a>
-            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -38,8 +38,24 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="about-container hidden">
-            <div class="about-image" data-aos="zoom-in">
-                <img src="assets/My_image1 (2).jpg" alt="Ashmit Kumar Mishra">
+            <!-- Left Column (Image + Links) -->
+            <div class="profile-column">
+                <div class="about-image" data-aos="zoom-in">
+                    <img src="assets/My_image1 (2).jpg" alt="Ashmit Kumar Mishra">
+                </div>
+                <div class="profile-links" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://github.com/ashmitKmishra" target="_blank" class="profile-link">
+                        <svg> xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        GitHub
+                    </a>
+                    <a href="https://leetcode.com/ashmit0702" target="_blank" class="profile-link">
+                        <svg> xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline></svg>
+                        LeetCode
+                    </a>
+                </div>
             </div>
             <div class="about-content" data-aos="fade-left">
                 <h2>About Me</h2>
@@ -93,10 +109,17 @@
             <div class="project-grid">
                 <div class="project-content">
                     <h2>Spotify Clone</h2>
-                    <p>FULL STACK CLONE.....</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>TensorFlow</span>
+                    <ol type="i">
+                        <li>Dynamic content rendering using DOM manipulation for playlist management</li>
+                        <li>CSS Grid/Flexbox architecture achieving cross-browser compatibility</li>
+                        <li>Event-driven audio controls with HTML5 Web Audio API integration</li>
+                    </ol>
+                    <div 
+                    class="tech-stack">
+                        <span>HTML</span>
+                        <span>Tailwind CSS</span>
+                        <span>JavaScript</span>
+                        <span>API Integration</span>
                         <span>Flask</span>
                     </div>
                 </div>
@@ -147,26 +170,21 @@
                             <li>Developed a secure end-to-end data transmission system using a testbed of 9 USRPs synchronized with Octoclock, integrated with srsRAN and Open5GS for multi-path data encoding, transmission, and decoding.</li>
                             <li>Optimized SINR values of gNodeBs and UEs to enhance security and minimize latency while ensuring resilience against single-path attacks and DoS threats, increasing message confidentiality by 100%.</li>
                             <li>Designed and tested fault-tolerant protocols, simulating DoS attacks to evaluate system resilience, reducing packet loss, and improving throughput using GNURadio, Python, and Wireshark.</li>
-                            <li>Implemented a CNN-based multi-image classification system using Python, TensorFlow, and MATLAB for preprocessing, achieving high accuracy in classifying microscopic cancer images.</li>
+                            <li>Configured a hardware testbed with 5 interconnected workstations—3 acting as gNodeB servers and 2 as UE clients—linked via USRPs to enable multi-path data transmission. The setup facilitates real-time signal processing, with USRPs handling encoded data streams across parallel wireless channels.</li>
+
                         </ol>
                     </p>
                     <div class="tech-stack">
                         <span>Python</span>
                         <span>C++</span>
-                        <span>srsRAN</span>
-                        <span>Open5GS</span>
-                        <span>GNURadio</span>
-                        <span>Wireshark</span>
-                        <span>MATLAB</span>
-                        <span>TensorFlow</span>
-                        <span>Keras</span>
-                        <span>ZeroMQ</span>
-                        <span>USRP</span>
-                        <span>Octoclock</span>
+                        <span>Network Security & DoS Mitigation</span>
+                        <span>5G Network Simulationv</span>
+                        <span>Software-Defined Radio (SDR)</span>
+                        <span>Signal Processing & Latency Optimization</span>
                     </div>
                 </div>
                 <div class="project-image">
-                    <img src="./assets/" alt="Multi-Path Communication System Setup" class="project-img">
+                    <img src="./assets/MultiPath Setup 2.jpg" alt="Multi-Path Communication System Setup" class="project-img">
                 </div>
             </div>
         </div>

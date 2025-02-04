@@ -489,3 +489,66 @@ ol:hover{
     transform: scale(1.1);
     color: rgb(198, 198, 255);
 }
+/* Profile Links Styling */
+/* About Container */
+/* Profile Links Styling */
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 2rem;
+    background: rgba(0, 180, 216, 0.1);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--secondary);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.profile-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-link:hover {
+    background: var(--secondary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-link:hover svg {
+    stroke: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .profile-link {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}
+
+/* Animation Timing */
+[data-aos="zoom-in"] {
+    transition-delay: 0.2s;
+}
+
+.about-content[data-aos="fade-left"] {
+    transition-delay: 0.5s;
+}
