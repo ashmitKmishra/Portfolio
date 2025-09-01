@@ -59,7 +59,7 @@ AOS.init({
 // Add smooth appear effect for about section
 const aboutObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting) {
+        if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             entry.target.style.opacity = "1";
             entry.target.style.transform = "translateY(0)";
@@ -73,10 +73,10 @@ document.querySelectorAll('.about-container').forEach(container => {
 document.addEventListener('DOMContentLoaded', () => {
     const dropdown = document.querySelector('.dropdown-container');
     const trigger = document.querySelector('.contact-trigger');
-    
+
     // Mobile toggle
     trigger.addEventListener('click', (e) => {
-        if(window.innerWidth <= 768) {
+        if (window.innerWidth <= 768) {
             e.preventDefault();
             const dropdownMenu = document.querySelector('.contact-dropdown');
             dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
@@ -85,8 +85,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close dropdown when clicking outside
     document.addEventListener('click', (e) => {
-        if(!dropdown.contains(e.target) && window.innerWidth <= 768) {
+        if (!dropdown.contains(e.target) && window.innerWidth <= 768) {
             document.querySelector('.contact-dropdown').style.display = 'none';
         }
     });
 });
+// Fade hero video out as we scroll
+(function () {
+    const video = document.querySelector('.hero-video');
+    if (!video) return;
+
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (prefersReduced.matches) { try { video.pause(); } catch { } return; }
+
+    const max = Math.min(600, Math.round(window.innerHeight * 0.75));
+    function onScroll() {
+        const t = Math.min(1, window.scrollY / max);
+        video.style.opacity = String(1 - t);
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+})();
