@@ -609,8 +609,181 @@ ul {
     }
 }
 
-/* ...existing code... */
+/* --- Work Experience Section Visual & Interactive Improvements --- */
 
+/* Card container animation on hover */
+.experience-card {
+    background: linear-gradient(120deg, #232526 0%, #334155 100%);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2rem 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s, background 0.3s;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    /* For fade-in animation */
+}
+
+.experience-card.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1.01);
+    transition: opacity 0.7s cubic-bezier(.4,2,.3,1), transform 0.7s cubic-bezier(.4,2,.3,1);
+}
+
+.experience-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(20, 184, 166, 0.15), 0 2px 8px rgba(96, 165, 250, 0.10);
+    background: linear-gradient(120deg, #334155 0%, #232526 100%);
+}
+
+.experience-card::before {
+    content: "";
+    position: absolute;
+    top: -60px; left: -60px;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, var(--teal) 0%, transparent 70%);
+    opacity: 0.12;
+    z-index: 0;
+    transition: opacity 0.3s;
+}
+
+.experience-card:hover::before {
+    opacity: 0.22;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.2rem;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.title-group h3 {
+    color: var(--teal);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.experience-card:hover .title-group h3 {
+    color: var(--accent);
+}
+
+.company {
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.date {
+    background: rgba(20, 184, 166, 0.12);
+    color: var(--teal);
+    padding: 0.35rem 1rem;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    font-weight: 600;
+    box-shadow: 0 1px 6px rgba(20,184,166,0.08);
+}
+
+.card-list {
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.card-list li {
+    margin: 0.7rem 0;
+    padding-left: 2rem;
+    line-height: 1.7;
+    position: relative;
+    color: var(--light);
+    font-size: 1.05rem;
+    transition: color 0.2s;
+    opacity: 0.92;
+}
+
+.card-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 1.2rem;
+    top: 2px;
+    transition: color 0.2s;
+}
+
+.experience-card:hover .card-list li {
+    color: var(--accent-2);
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tech-stack span {
+    background: var(--surface-2);
+    color: var(--teal);
+    padding: 0.32rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    border: 1px solid var(--teal);
+    box-shadow: 0 1px 6px rgba(20,184,166,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.tech-stack span:hover {
+    background: var(--teal);
+    color: #232526;
+    transform: scale(1.08);
+}
+
+/* Responsive improvements for work cards */
+@media (max-width: 900px) {
+    .experience-card {
+        padding: 1.2rem 0.7rem;
+        margin-bottom: 1.2rem;
+    }
+    .card-header {
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: flex-start;
+    }
+    .title-group h3 {
+        font-size: 1.1rem;
+    }
+    .company {
+        font-size: 0.95rem;
+    }
+    .date {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.7rem;
+    }
+    .card-list li {
+        font-size: 0.98rem;
+        padding-left: 1.2rem;
+    }
+    .tech-stack span {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.7rem;
+    }
+}
+
+/* --- End Work Experience Section Improvements --- */
 .card-list li {
     margin: 0.8rem 0;
     padding-left: 1.8rem;
@@ -949,3 +1122,61 @@ body.loaded .hero-content {
     position: relative;
     z-index: 2;
 }
+.site-footer {
+    width: 100%;
+    background: var(--surface-2, #0F172A);
+    color: var(--muted, #A7B0C0);
+    padding: 1.2rem 0 0.7rem 0;
+    text-align: center;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.12);
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    padding: 0 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 0rem;
+    justify-content: center;
+    margin-top: 0.3rem;
+    flex-direction: row; /* Always side by side */
+}
+
+.footer-links a {
+    color: var(--accent, #60A5FA);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.footer-links a:hover {
+    color: var(--teal, #14b8a6);
+}
+
+/* Responsive for mobile: keep links side by side, adjust padding */
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 0 0.5rem;
+        gap: 0rem;
+    }
+    .footer-links {
+        flex-direction: row;
+        gap: 0rem;
+        margin-top: 0.2rem;
+    }
+    .site-footer {
+        padding: 0.8rem 0 0.5rem 0;
+        font-size: 0.95rem;
+    }
+}
+
