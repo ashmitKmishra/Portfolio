@@ -901,6 +901,18 @@ ol:hover {
         margin-bottom: 1rem;
     }
 }
+body.loading .hero-content {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+}
+
+/* Show hero content when loaded */
+body.loaded .hero-content {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s;
+}
 
 /* About background image: always visible, covers section */
 .section#about {

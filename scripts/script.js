@@ -106,3 +106,16 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
 })();
+window.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('.hero-video');
+    if (video) {
+        video.addEventListener('loadeddata', () => {
+            document.body.classList.remove('loading');
+            document.body.classList.add('loaded');
+        });
+    } else {
+        // If no video, fallback to loaded immediately
+        document.body.classList.remove('loading');
+        document.body.classList.add('loaded');
+    }
+});
