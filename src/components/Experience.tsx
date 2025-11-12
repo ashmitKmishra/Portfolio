@@ -2,8 +2,50 @@ import { Timeline } from "@/components/ui/timeline";
 import { motion } from "framer-motion";
 
 const experiences = [
-  {
+   {
     title: "2025 - Present",
+    content: (
+      <div>
+        <motion.h3
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-2xl font-bold text-foreground mb-2"
+        >
+          Undergraduate Research Assistant | Sept 2025 - Present
+        </motion.h3>
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-primary font-semibold mb-4"
+        >
+          @ Department of CSE | Mississippi State
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="text-muted-foreground text-sm md:text-base mb-4"
+        >
+          <ul className="space-y-2">
+            <li className="flex items-start">
+              <span className="text-primary mr-2">▹</span>
+              <span>Building a hybrid 3D scene reconstruction system in Swift using ARKit’s Scene Reconstruction API and Metal-backed ModelIO pipelines, enabling real-time OBJ/MTL mesh exports with full LiDAR-RGB metadata to improve reconstruction accuracy.</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-primary mr-2">▹</span>
+              <span>Optimizing frame-capture and metadata policy by implementing adaptive thresholds for motion, rotation, and time intervals, resulting in cleaner datasets and higher-quality depth-RGB alignment for downstream 3D processing.</span>
+            </li>
+          </ul>
+        </motion.div>
+      </div>
+    ),
+  },
+  {
+    // title: "2025 - Present",
     content: (
       
       <div>
@@ -14,7 +56,7 @@ const experiences = [
           viewport={{ once: true }}
           className="text-2xl font-bold text-foreground mb-2"
         >
-          Software Developer Intern | May - Aug
+          Software Developer Intern | May 2025 - Aug 2025
         </motion.h3>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
