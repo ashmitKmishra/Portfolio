@@ -83,12 +83,12 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex-1 w-full h-[500px] sm:h-[600px] relative pointer-events-none md:hidden"
           >
-            <div className="pointer-events-auto w-full h-full">
+            {/* <div className="pointer-events-auto w-full h-full">
               <SplineScene 
                 scene="https://prod.spline.design/Z1Ta-aCxUMq1depO/scene.splinecode"
                 className="w-full h-full"
               />
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Desktop/Tablet Robot - Show only on md screens and larger */}
