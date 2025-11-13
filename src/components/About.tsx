@@ -30,15 +30,15 @@ const skills = [
     category: "Frontend",
     color: "from-cyan-500 to-blue-500",
     skills: [
-      "React", "TypeScript", "Next.js",
-      "TailwindCSS", "Vite", "Web Speech API",
+      "Javascript", "React", "TypeScript", "Next.js",
+      "TailwindCSS", "Vite"
     ]
   },
   {
     category: "Backend",
     color: "from-green-500 to-emerald-500",
     skills: [
-      "Node.js", "Express.js", "Python", "Flask",
+      "Node.js", "Express.js", "Python/Flask",
       "PostgreSQL", "Supabase", "RESTful APIs",
       "Async API Integration", "Postman"
     ]
