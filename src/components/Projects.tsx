@@ -5,11 +5,19 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "Coverage Compass: AI-Powered Insurance Recommendation Platform with Risk Assessment",
+    description: "Engineered an InsurTech platform using AWS Bedrock to parse unstructured policies, extracting coverage limits and gaps with high precision. Built a backend pipeline that processes user financial data to calculate personalized risk profiles and generate real-time coverage recommendations.",
+    tech: ["AWS", "React", "Node.js", "Framer", "PostgreSQL"],
+    github: "https://github.com/ashmitKmishra/BullDawg-Hackers",
+    demo: "https://github.com/ashmitKmishra/BullDawg-Hackers",
+    gradient: "from-red-500 to-blue-500"
+  },
+  {
     title: "HackFashion-AI: Hackathon Winner @ HackUTA7",
     description: "HackFashion-AI is an intelligent wardrobe management and styling platform that combines computer vision, natural language processing, and voice synthesis to revolutionize how you interact with your closet. Upload your clothes, chat with your AI stylist, and get personalized outfit recommendations—all powered by cutting-edge AI technology.",
     tech: ["Postman", "React", "Node.js", "Express", "Typescript"],
     github: "https://github.com/ashmitKmishra/HackFashion-AI",
-    demo: "#",
+    demo: "https://github.com/ashmitKmishra/HackFashion-AI",
     gradient: "from-cyan-500 to-blue-500"
   },
   {
@@ -17,7 +25,7 @@ const projects = [
     description: "Destinify simplifies travel planning by creating customized itineraries for trips of any length—whether a weekend getaway or an extended vacation. Users can input their travel preferences and destinations, and Destinify generates a detailed plan with AI-driven suggestions. ",
     tech: ["TypeScript", "Vite", "Supabase", "TailwindCSS & ShadcnUI"],
     github: "https://github.com/ashmitKmishra/Destinify_US_Trip_Planner",
-    demo: "#",
+    demo: "https://github.com/ashmitKmishra/Destinify_US_Trip_Planner",
     gradient: "from-green-500 to-emerald-500"
   },
   {
@@ -25,7 +33,7 @@ const projects = [
     description: "An end-to-end solution for American Sign Language recognition using deep learning and web technologies with Real-time webcam gesture recognition.",
     tech: ["TensorFlow 2.10", "Flask REST API", "Python", "OpenCV DNN", "Transfer Learning"],
     github: "https://github.com/ashmitKmishra/Detection-Model",
-    demo: "#",
+    demo: "https://github.com/ashmitKmishra/Detection-Model",
     gradient: "from-purple-500 to-pink-500"
   },
   // {

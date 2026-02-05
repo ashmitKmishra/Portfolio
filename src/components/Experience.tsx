@@ -12,7 +12,7 @@ const experiences = [
           viewport={{ once: true }}
           className="text-2xl font-bold text-foreground mb-2"
         >
-          Undergraduate Research Assistant | Sept 2025 - Present
+          iOS Developer | Sept 2025 - Present
         </motion.h3>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -106,7 +106,7 @@ const experiences = [
           viewport={{ once: true }}
           className="text-2xl font-bold text-foreground mb-2"
         >
-          Undergrad Research Assistant | Nov 2024 - May 2025
+          Machine Learning Intern | Nov 2024 - May 2025
         </motion.h3>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
