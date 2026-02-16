@@ -4,6 +4,14 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
+    {
+    title: "Open-Source Contributor @ itwinjs-core",
+    description: "Contributed to the core open-source repository of Bentley Systems' iTwin platform (PR #8795). Diagnosed and patched an edge case in the schema loading engine that caused data inconsistencies during backend synchronization and wrote test suites to validate the fix and prevent regressions, improving the stability of 3D infrastructure digital twins for enterprise users.",
+    tech: ["TypeScript", "Node.js", "Mocha", "Github Actions", "CI/CD"],
+    github: "https://github.com/iTwin/itwinjs-core/pull/8795",
+    demo: "https://github.com/iTwin/itwinjs-core/pull/8795",
+    gradient: "from-blue-200 to-blue-500"
+  },
   {
     title: "Coverage Compass: AI-Powered Insurance Recommendation Platform with Risk Assessment",
     description: "Engineered an InsurTech platform using AWS Bedrock to parse unstructured policies, extracting coverage limits and gaps with high precision. Built a backend pipeline that processes user financial data to calculate personalized risk profiles and generate real-time coverage recommendations.",
