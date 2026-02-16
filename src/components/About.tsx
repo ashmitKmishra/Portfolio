@@ -151,10 +151,10 @@ export function About() {
                 Ex Software Developer Intern @ Bentley Systems
               </li>
               <li className="text-foreground text-lg leading-relaxed">
-                Hackathon Winner @ HackUTA7
+                iOS Developer @ MSU's Department of CSE
               </li>
               <li className="text-foreground text-lg leading-relaxed">
-                Undergrad Researcher @ MSU's Department of CSE
+                Hackathon Winner @ HackUTA7
               </li>
             </ul>
 

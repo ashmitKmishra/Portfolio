@@ -176,23 +176,17 @@ const experiences = [
           <ul className="space-y-2">
             <li className="flex items-start">
               <span className="text-primary mr-2">▹</span>
-              <span>Developed and tested a secure & end-to-end data transmission system by configuring 9 USRPs
-                synchronized with Octoclock
-                and integrating srsRAN and Open5GS, making the data transmission resilient to DoS attacks &
-                increasing the message
-                confidentiality by 100%.</span>
+              <span>Engineered a secure 5G data transmission protocol across 9 networked USRP nodes, implementing end-to
+end encryption to prevent packet interception and spoofing</span>
             </li>
             <li className="flex items-start">
               <span className="text-primary mr-2">▹</span>
-              <span>Worked on developing a convolutional neural network (CNN) model for multi-image classification,
-                implemented data
-                preprocessing & model building, and achieved accuracy up to 95% in recognizing given images.</span>
+              <span>Hardened network infrastructure against Distributed Denial of Service (DDoS) attacks by configuring
+Open5GS and srsRAN parameters, ensuring signal integrity under high-load simulations.</span>
             </li>
             <li className="flex items-start">
               <span className="text-primary mr-2">▹</span>
-              <span>Leverage Python/C++ and open-source software libraries to develop software tested with networked
-                software-defined
-                radio hardware. Work on OSS such as srsRAN using ZeroMQ & gNodeB for 5G network simulations.</span>
+              <span>Optimized low-level system performance using C++ and Python (ZeroMQ), reducing latency in software defined radio communications for real-time 5G simulation.</span>
             </li>
           </ul>
         </motion.div>

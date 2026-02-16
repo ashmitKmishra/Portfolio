@@ -42,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             Work <span className="text-gradient">Experience</span>
           </h2>
         <p className="text-muted-foreground text-sm md:text-base max-w-xl md:max-w-2xl mx-auto text-center whitespace-normal md:whitespace-nowrap">
-          A timeline of my professional journey with almost <span className="text-gradient">3 years</span> of Experience.
+          A timeline of my professional journey with more than <span className="text-gradient">3 years</span> of Experience.
         </p>
       </div>
 
